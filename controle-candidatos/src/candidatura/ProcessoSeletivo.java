@@ -5,7 +5,25 @@ public class ProcessoSeletivo {
     // Vamos explorar alguns outros cenários com fluxo condicionais, repetições e excepcionais.
     
     public static void main(String[] args) {
-        selecaoCandidatos();
+        imprimirSelecionados();
+    }
+
+    // Case 3: Agora é hora de imprimir a lista dos candidatos selecionados para disponibilizar para o RH entrar em contato.
+
+    static void imprimirSelecionados(){
+        String [] candidatos = {"FELIPE", "JULIO", "MARCIA", "PAULO", "AUGUSTO"};
+
+        System.out.println("Imprimindo a lista de candidatos informando o indice do elemento");
+
+        for(int indice = 0; indice < candidatos.length; indice++){
+            System.out.println("O Candidato de N° " + (indice+1) + " é o " + candidatos[indice]);
+        }
+
+        System.out.println("Forma abreviada de interação For Each");
+
+        for(String candidato: candidatos){
+            System.out.println("O Candidato selecionado foi " + candidato);
+        }
     }
 
     // Case 2: Foi solicitado que o nosso sistema garanta que diante das inúmeras candidaturas sejam selecionados apenas no máximo 5 candidatos
