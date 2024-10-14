@@ -8,6 +8,13 @@ public class ProcessoSeletivo {
         imprimirSelecionados();
     }
 
+    // Case 4: O RH deverá realizar uma ligação com no máximo 3 tentativas para cada candidato selecionado e caso o candidato atemda
+    // deve-se imprimir:
+    // CONSEGUIMOS CONTATO COM [ CANDIDATO ] APÓS [TENTATIVA] TENTATIVA(S)
+    // Do Contrário imprima "NÂO CONSEGUIMOS CONTATO COM O [ CANDIDATO ]"
+
+    
+
     // Case 3: Agora é hora de imprimir a lista dos candidatos selecionados para disponibilizar para o RH entrar em contato.
 
     static void imprimirSelecionados(){
